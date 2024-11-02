@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Bố Trí Ảnh và Nội Dung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-size: 18px;
+        }
+        body > h1{
+            text-align: center;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .image-container img {
+            width: 25%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .text-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item {
+            flex: 1 1 40%; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 10px; 
+            overflow: hidden;
+            background-color: white;
+            margin: 5px; 
+            display: flex; 
+            flex-direction: column; 
+        }
+        .item img {
+            width: 100%; 
+            height: auto;
+            flex: 1;
+        }
+        .content {
+            padding: 15px;
+            flex-shrink: 0;
+            margin-top:auto;
+        }
+        @media (max-width: 768px) {
+            .item {
+                flex: 1 1 100%; 
+            }
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <h1>Lorem ullamco</h1>
+    <div class="image-container">
+        <img src="./Ảnh chụp màn hình 2024-11-02 170735.png" alt="Ảnh 1">
+        <img src="./Ảnh chụp màn hình 2024-11-02 170759.png" alt="Ảnh 2">
+    </div>
+    <div class="text-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consequat reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.</p>
+        <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+    </div>
+<div class="container">
+    <div class="item">
+        <img src="./Ảnh chụp màn hình 2024-11-02 163117.png" alt="Ảnh 1">
+    </div>
+    <div class="item">
+        <div class="content">
+            <h2>Lorem ipsum</h2>
+            <h3>Excepteur eiusmod consectetur </h3>
+            <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+            <h3>Quis aliqua reprehenderit</h3>
+            <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+            <h3>Ad sit cillum amet duis quis commodo</h3>
+            <p>Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur.</p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="content">
+            <h2>Mollit aliquip do ipsum consectetur</h2>
+            <p>Ex laborum ea qui consectetur mollit commodo eiusmod culpa dolor cupidatat. Ullamco dolore irure ea sit elit velit non officia. Ad eu reprehenderit in et voluptate mollit. Reprehenderit incididunt magna consequat enim sit eiusmod est dolor laborum cupidatat.</p>
+            <p>Ipsum minim mollit irure dolore. Sint fugiat deserunt dolor aute enim et cillum adipisicing cillum nostrud anim. Sit dolore incididunt dolore do sunt pariatur consectetur id qui pariatur eu incididunt adipisicing. Irure sint fugiat officia veniam consectetur. Esse laborum amet aliqua ad in sunt labore duis.</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="./Ảnh chụp màn hình 2024-11-02 163140.png" alt="Ảnh 4">
+    </div>
+</div>
+
+</body>
+</html>
